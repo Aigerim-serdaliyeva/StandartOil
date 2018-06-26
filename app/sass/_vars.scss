@@ -1,13 +1,14 @@
 @import './fonts';
 @import './_mixins/circle';
+@import './_mixins/list';
 
-$default_family: MinionPro, Arial;
-$title_family: MinionPro, Arial;
+$default_family: Roboto, Arial;
+$title_family: Roboto, Arial;
 $font_size: 14px;
 $title_color: #000;
 $text_color: #000;
 
-$accent: #13478f;
+$accent: #ee1d23;
 
 // Customization Bootstrap vars from "app/libs/bootstrap/scss/_variables.scss"
 $grid-gutter-width: 30px;
