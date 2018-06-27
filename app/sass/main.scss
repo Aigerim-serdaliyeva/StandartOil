@@ -9,13 +9,32 @@
   flex-direction: column;
 }
 
+.phone-block {
+  position: relative;
+  padding-left: 35px;
+  margin-right: 20px;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 26px;
+    height: 26px;
+    background-image: url('../img/telephone.png');
+  }
+
+  a {
+    display: block;
+  }
+}
+
 .header {
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 98;
-  padding: 10px 0;
-  height: 70px;
   background-color: #292929;
 
   &--scrolled {
@@ -24,6 +43,7 @@
   &__content {
     position: relative;
     padding-left: 145px;
+    height: 70px;
     display: flex;
     align-items: center;
   }
@@ -39,33 +59,10 @@
     font-weight: normal;
     max-width: 220px;
   }
-
-  &__phone {
-    position: relative;
-    padding-left: 30px;
-    margin-right: 20px;
-
-    &:before {
-      content: "";
-      position: absolute;
-      top: 50%;
-      left: 0;
-      transform: translateY(-50%);
-      width: 26px;
-      height: 26px;
-      background-image: url('../img/telephone.png');
-    }
-
-    a {
-      display: block;
-
-    }
-  }
 }
 
 .footer {
-  background-color: $accent;
-  font-size: 16px;
+  background-color: #292929;
 
   .logo {
     margin-right: 100px;
@@ -76,12 +73,23 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 0;
+  }
+
+  &__title {
+    font-size: 14px;
+    font-weight: normal;
+    max-width: 220px;
   }
 
   &__address {
-    max-width: 165px;
     margin-right: 40px;
+    display: flex;
+
+    .fa {
+      color: $accent;
+      font-size: 30px;
+      margin-right: 10px;
+    }
   }
 
   &__phone {
@@ -95,7 +103,14 @@
       margin-top: 3px;
       display: block;
     }
-  }   
+  }  
+  
+  &__info {
+    text-align: center;
+    font-size: 13px;
+    color: #ababab;
+    padding: 15px 0;
+  }
 }
 
 .main-menu {    
@@ -145,6 +160,10 @@
     .inverse & {
       color: #fff;
     }
+  }
+
+  &--gray {
+    background-color: #f2f2f2;
   }
 }
 
@@ -199,11 +218,21 @@
 }
 
 .s-vyibor {
+  text-align: center;
+
+  &__content {
+    position: relative;
+    display: inline-block;
+    padding: 0 125px 0 115px;
+  }
+
   .vyibor {
+    position: absolute;
     display: flex;
     align-items: center;
     font-size: 14px;
     font-weight: bold;
+    text-align: left;
 
     &__number {
       display: none;
@@ -227,10 +256,21 @@
     &--left {
       flex-direction: row-reverse;
       text-align: right;
+      transform: translateX(-100%);
 
       .vyibor__circle {
         margin: 0 0 0 10px;
       }
+    }
+
+    &-1 {
+      top: 10%;
+      left: 10%;
+    }
+
+    &-3 {
+      top: 0;
+      left: 60%;
     }
   }
 }
