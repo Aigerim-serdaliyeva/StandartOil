@@ -212,7 +212,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1;
   font-weight: normal;
   text-align: center;
-  background-color:$accent;
+  background-color: $accent;
   color: #fff !important;
   white-space: nowrap;
   border: 1px solid $accent;
@@ -232,6 +232,16 @@ h1, h2, h3, h4, h5, h6 {
 
   &--noshadow {
     box-shadow: none;
+  }
+
+  &--noback {
+    background-color: transparent;
+    color: $accent;
+
+    &:hover {
+      background-color: $accent;
+      color: #fff;
+    }
   }
 }
 
@@ -322,6 +332,13 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: normal;
     text-align: center;
     margin-bottom: 20px;
+
+    &__1 {
+      font-size: 18px;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 10px;
+    }
   }
 
   .input-div, .button {
@@ -412,14 +429,16 @@ h1, h2, h3, h4, h5, h6 {
     }
     
     &-dot {
-      width: 16px;
-      height: 16px;
-      background: $accent !important;
+      width: 7px;
+      height: 7px;
+      border: 1px solid $accent;
       margin: 0 5px;
       border-radius: 50%;
 
       &.active {
-        background: darken($accent, 15%) !important;
+        width: 11px;
+        height: 11px;
+        background-color: $accent;
       } 
     }
 	}

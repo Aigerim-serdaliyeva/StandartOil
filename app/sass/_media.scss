@@ -60,6 +60,11 @@
 
   .s {
     
+    &-information {
+      .information {
+        margin-bottom: 20px;
+      }
+    }
   }
 }
 
@@ -109,6 +114,18 @@
     &-main {
       
     } 
+
+    &-us {
+
+      &__img {
+        margin-bottom: 15px;
+        text-align: center;
+      }
+
+      &__text {
+        margin-bottom: 10px;
+      }
+    }
   }
 }
 
@@ -119,6 +136,20 @@
   }
 
   .s {
+
+    &-ka4estva {
+
+      .form {
+        &__block {
+          display: block;
+        }
+      }
+
+      &__img {
+        text-align: center;
+      }
+    }
+
     &-thanks {
       padding: 150px 0 50px;
       
@@ -129,6 +160,16 @@
       &-text {
         font-size: 16px;
         margin-bottom: 40px;
+      }
+    }
+
+    &-vybor {
+
+      &__content {
+
+        .vyibor {
+          position: static;
+        }
       }
     }
   }

@@ -265,13 +265,152 @@
 
     &-1 {
       top: 10%;
-      left: 10%;
+      left: 20%;
+    }
+
+    &-2 {
+      top: 60%;
+      left: 37%;
     }
 
     &-3 {
       top: 0;
-      left: 60%;
+      left: 55%;
     }
+
+    &-4 {
+      top: 25%;
+      left: 75%;
+    }
+
+    &-5 {
+      top: 83%;
+      left: 64%;
+    }
+  }
+}
+
+.s-katalog {
+
+  .katalog {
+    padding: 30px 15px;
+    width: 270px;
+    text-align: center;
+    box-shadow: 0px 3px 12.61px 0.39px rgba(0, 0, 0, 0.17);
+
+    &__img {
+      margin: 0 auto 18px;
+      width: 76px;
+      height: 134px;
+    }
+
+    &__title {
+      margin-bottom: 18px;
+    }
+
+    &:hover {
+      width: 310px;
+      padding: 30px 20px;
+
+      .katalog__img {
+        width: 95px;
+        height: 155px;
+      }
+
+      .katalog__title {
+        font-size: 16px;
+      }
+
+      .button {
+        font-size: 15px;
+      }
+    } 
+  }
+}
+
+.s-us {
+
+  &__content {
+    margin-bottom: 35px;
+  }
+
+  &__text {
+    color: #373737;
+    margin-bottom: 15px;
+  }
+
+  .form {
+    max-width: 870px;
+    margin: 0 auto;
+    box-shadow: 0px 3px 12.61px 0.39px rgba(0, 0, 0, 0.17);
+    padding: 25px;
+    // z-index: 98;
+
+    &__title {
+      font-size: 14px;
+    }
+  }
+}
+
+.s-video {
+  padding-top: 125px;
+  margin-top: -125px;
+
+  &__video {
+    text-align: center;
+  }
+}
+
+.s-ka4estva {
+
+  .form {
+
+    &__block {
+      display: flex;
+      max-width: 500px;
+      justify-content: space-between;
+      margin: 0 auto;
+      align-items: flex-end;
+      margin-top: 20px;
+    }
+  }
+}
+
+.s-information {
+
+  .information {
+    box-shadow: 0px 3px 12.61px 0.39px rgba(0, 0, 0, 0.17);
+    padding: 25px;
+    flex-grow: 1;
+
+    &__title {
+      padding: 8px 40px 8px 25px;
+      display: inline-block;
+      background-color: $accent;
+      font-size: 18px;
+      color: #fff;
+      margin: 0 0 20px -25px;
+    }
+
+    &__text {
+      color: #5b5b5b;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.s-garant {
+  background-image: url("../img/garant-back.jpg");
+  padding: 40px 0 60px;
+
+  &__img {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  &__title {
+    text-align: center;
+    margin-bottom: 15px;
   }
 }
 
