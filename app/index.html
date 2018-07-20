@@ -174,17 +174,35 @@
     <section class="section s-katalog section--gray">
       <div class="container">
         <h2 class="section-title">Каталог товаров "Standard Oil"</h2>
-        <div class="owl-carousel carousel-katalog">
+
+        <div class="text-center d-none d-md-block">
+          <button class="button tab button--noback">Бензиновый двигатель</button>
+          <button class="button tab button--disabled">Дизельный двигатель</button>
+          <button class="button tab button--disabled">Смазочные масла</button>
+        </div>
+
+        <div class="dropdown d-md-none">
+          <button class="button button--noback dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown">
+            <span>Бензиновый двигатель</span>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">Бензиновый двигатель</a>
+            <a class="dropdown-item" href="#">Дизельный двигатель</a>
+            <a class="dropdown-item" href="#">Смазочные масла</a>
+          </div>
+        </div>
+
+        <div class="owl-carousel has-nav carousel-katalog">
           <div class="katalog">
             <div class="katalog__img">
               <img src="./img/katalog-1.png" alt="">
             </div>
-            <div class="katalog__title">STANDARD OIL® <br>
+            <h3 class="katalog__title">STANDARD OIL® <br>
               Полностью синтетическое масло 
-              для бензиновых двигателей</div>
+              для бензиновых двигателей</h3>
             <div class="katalog__button">
-              <button class="button button-noback button--noshadow">Подробнее</button>
-              <button class="button button-noback button--noshadow">Заказать</button>
+              <button class="button button--noback">Подробнее</button>
+              <button class="button button--noback">Заказать</button>
             </div>
           </div>
 
@@ -192,12 +210,12 @@
             <div class="katalog__img">
               <img src="./img/katalog-2.png" alt="">
             </div>
-            <div class="katalog__title">STANDARD OIL® <br>
+            <h3 class="katalog__title">STANDARD OIL® <br>
               Полусинтетическое масло 
-              для бензиновых двигателей</div>
+              для бензиновых двигателей</h3>
             <div class="katalog__button">
-              <button class="button button-noback button--noshadow">Подробнее</button>
-              <button class="button button-noback button--noshadow">Заказать</button>
+              <button class="button button--noback">Подробнее</button>
+              <button class="button button--noback">Заказать</button>
             </div>
           </div>
 
@@ -205,11 +223,11 @@
             <div class="katalog__img">
               <img src="./img/katalog-3.png" alt="">
             </div>
-            <div class="katalog__title">STANDARD OIL® <br>
-              Моторное масло</div>
+            <h3 class="katalog__title">STANDARD OIL® <br>
+              Моторное масло</h3>
             <div class="katalog__button">
-              <button class="button button-noback button--noshadow">Подробнее</button>
-              <button class="button button-noback button--noshadow">Заказать</button>
+              <button class="button button--noback">Подробнее</button>
+              <button class="button button--noback">Заказать</button>
             </div>
           </div>
 
@@ -217,25 +235,14 @@
             <div class="katalog__img">
               <img src="./img/katalog-4.png" alt="">
             </div>
-            <div class="katalog__title">STANDARD OIL® <br>
-              Моторное масло</div>
+            <h3 class="katalog__title">STANDARD OIL® <br>
+              Моторное масло</h3>
             <div class="katalog__button">
-              <button class="button button-noback button--noshadow">Подробнее</button>
-              <button class="button button-noback button--noshadow">Заказать</button>
+              <button class="button button--noback">Подробнее</button>
+              <button class="button button--noback">Заказать</button>
             </div>
           </div>
-
-          <div class="katalog">
-            <div class="katalog__img">
-              <img src="./img/katalog-4.png" alt="">
-            </div>
-            <div class="katalog__title">STANDARD OIL® <br>
-              Моторное масло</div>
-            <div class="katalog__button">
-              <button class="button button-noback button--noshadow">Подробнее</button>
-              <button class="button button-noback button--noshadow">Заказать</button>
-            </div>
-          </div>
+          
         </div>
       </div>
     </section>

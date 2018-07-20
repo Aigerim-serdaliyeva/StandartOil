@@ -160,16 +160,24 @@ $(document).ready(function () {
     }
   });
 
+  $(".dropdown-item").click(function(e) {
+    e.preventDefault();
+    var $dropdown = $(this).closest(".dropdown");
+    $dropdown.find(".dropdown-toggle span").html($(this).html());
+  });
+
   $(".carousel-katalog").owlCarousel({
-    loop: true,
+    loop: false,
+    dots: false, nav: true,
     smartSpeed: 500,
-    margin: 30,
+    margin: 5,
     navText: ['', ''],
     responsive: {
       0: { items: 1, mouseDrag: false, dots: true, nav: false },
-      480: { items: 2, mouseDrag: true, dots: false, nav: true },
-      768: { items: 3},
-      992: { items: 4},
+      576: { mouseDrag: true, items: 1 },
+      768: { items: 2 },
+      992: { items: 3},
+      1200: { items: 4},
     },
   });
 

@@ -3,6 +3,7 @@
 @import '../../node_modules/bootstrap/scss/bootstrap-grid.scss';
 @import '../../node_modules/bootstrap/scss/utilities/_spacing.scss';
 @import '../../node_modules/bootstrap/scss/utilities/_display.scss';
+@import '../../node_modules/bootstrap/scss/_dropdown.scss';
 
 * {
   box-sizing: border-box;
@@ -236,12 +237,20 @@ h1, h2, h3, h4, h5, h6 {
 
   &--noback {
     background-color: transparent;
-    color: $accent;
+    box-shadow: none;
+    color: $accent !important;
 
     &:hover {
       background-color: $accent;
-      color: #fff;
+      color: #fff !important;
     }
+  }
+
+  &--disabled {
+    box-shadow: none;
+    background-color: transparent !important;
+    border: 1px dashed #7b7b7b;
+    color: #7b7b7b !important;
   }
 }
 
@@ -384,15 +393,21 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .owl-carousel {
+  &.has-nav {
+    padding: 0 30px;
+  }
+
 	.owl {
     &-stage {
       display: flex;
+      padding: 20px 15px;
     }
 
     &-item {
       float: none;
       display: flex;
       justify-content: center;
+      padding: 15px;
 
       img {
         width: auto;
@@ -408,9 +423,13 @@ h1, h2, h3, h4, h5, h6 {
       background-image: url('../img/arrow-left.png') !important;
       background-repeat: no-repeat !important;
       background-position: center center !important;
-      transform: translateY(-50%);
+      margin-top: -25px;
       outline: 0;
       z-index: 10;
+
+      &.disabled {
+        background-image: url('../img/arrow-left-disabled.png') !important;
+      }
 		}
 
 		&-prev {
@@ -419,19 +438,23 @@ h1, h2, h3, h4, h5, h6 {
 
 		&-next {
       right: 0px;
-      background-image: url('../img/arrow-right.png') !important;
+      transform: rotate(-180deg);
     }
 
     &-dots {
       position: relative;
       text-align: center;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
       margin-top: 15px;
     }
     
     &-dot {
       width: 7px;
       height: 7px;
-      border: 1px solid $accent;
+      border: 1px solid $accent !important;
       margin: 0 5px;
       border-radius: 50%;
 

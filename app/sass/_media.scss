@@ -173,6 +173,24 @@
     display: flex;
   }
 
+  .owl-carousel {
+    &.has-nav {
+      padding: 0;
+    }
+  
+    .owl {
+      &-stage {
+        padding: 0;
+      }
+  
+      &-item {
+        & > *:hover {
+          transform: none;
+        }
+      }
+    }
+  }
+
   .s {
 
     &-ka4estva {

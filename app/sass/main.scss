@@ -9,6 +9,20 @@
   flex-direction: column;
 }
 
+.dropdown {
+  &-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin: 0 auto;
+
+    &:after {
+      font-size: 2em;
+    }
+  }
+}
+
 .phone-block {
   position: relative;
   padding-left: 35px;
@@ -298,12 +312,20 @@
 }
 
 .s-katalog {
+  .tab {
+    margin: 0 10px;
+  }
 
   .katalog {
-    padding: 30px 15px;
-    width: 270px;
+    width: 100%;
+    max-width: 270px;
+    margin: 0 auto;
+    padding: 30px 10px;
+    display: flex;
+    flex-direction: column;
     text-align: center;
     box-shadow: 0px 3px 12.61px 0.39px rgba(0, 0, 0, 0.17);
+    transition: 0.5s transform;
 
     &__img {
       margin: 0 auto 18px;
@@ -312,26 +334,26 @@
     }
 
     &__title {
+      font-size: 14px;
+      font-weight: normal;
+      color: #373737;
+      flex-grow: 1;
       margin-bottom: 18px;
     }
 
     &:hover {
-      width: 310px;
-      padding: 30px 20px;
-
-      .katalog__img {
-        width: 95px;
-        height: 155px;
-      }
-
-      .katalog__title {
-        font-size: 16px;
-      }
-
-      .button {
-        font-size: 15px;
-      }
+      transform: scale(1.15);
     } 
+  }
+
+  .carousel-katalog {
+    .owl-item {
+      
+    }
+
+    .owl-stage {
+      // padding: 20px 30px;
+    }
   }
 }
 
