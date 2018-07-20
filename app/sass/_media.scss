@@ -256,5 +256,11 @@
 
 // ≤1200px
 @include media-breakpoint-up(xl) {
-	
+	.owl-carousel {
+    &.has-nav {
+      margin-left: -30px;
+      margin-right: -30px;
+      width: auto;      
+    }
+  }
 }
