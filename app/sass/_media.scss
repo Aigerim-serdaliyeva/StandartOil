@@ -112,7 +112,13 @@
 
   .s {
     &-main {
-      
+      &__title {
+        font-size: 26px;
+      }
+
+      &__img {
+        display: none;
+      }
     } 
 
     &-us {
