@@ -19,6 +19,7 @@
     "owl.carousel": "^2.3.4",
     "popper.js": "^1.14.3",
     "remodal": "^1.1.1",
+    "slick-carousel": "^1.8.1",
     "wow.js": "^1.2.2"
   },
   "devDependencies": {
