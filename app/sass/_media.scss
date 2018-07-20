@@ -166,6 +166,12 @@
     }
   }
 
+  .s-reviews {
+    .carousel-reviews {
+      padding: 0;
+    }
+  }
+
   .s-shop {
     .slick {  
       &-track {
@@ -239,6 +245,27 @@
 
         .vyibor {
           position: static;
+        }
+      }
+    }
+  }
+
+  .s-reviews {
+    .review {
+      padding: 0px;
+      margin-bottom: 15px;
+
+      &__content {
+        padding: 0;
+        box-shadow: none;
+      }
+
+      &__image {
+        position: static;
+        margin-bottom: 15px;
+
+        img {
+          margin: 0 auto 15px;
         }
       }
     }

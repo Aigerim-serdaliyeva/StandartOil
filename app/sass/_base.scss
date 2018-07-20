@@ -506,15 +506,42 @@ h1, h2, h3, h4, h5, h6 {
     margin-left: -15px;
     margin-right: -15px;
   }
-  
+
   &-track {
-    display: flex;
-    align-items: center;
   }
 
   &-slide {
-    float: none;
     margin: 0 15px;
+    outline: none;
+  }
+
+  &-arrow {
+    position: absolute;
+    top: 50%;
+    width: 26px;
+    height: 50px;
+    background-image: url('../img/arrow-left.png') !important;
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
+    background-color: transparent !important;
+    border: none !important;
+    margin-top: -25px;
+    cursor: pointer;
+    outline: 0;
+    z-index: 10;
+
+    &.slick-disabled {
+      background-image: url('../img/arrow-left-disabled.png') !important;
+    }
+  }
+
+  &-prev {
+    left: 0px;
+  }
+
+  &-next {
+    right: 0px;
+    transform: rotate(-180deg);
   }
 
   &-dots {
@@ -523,6 +550,7 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 15px;
 
     li {
       width: 9px;

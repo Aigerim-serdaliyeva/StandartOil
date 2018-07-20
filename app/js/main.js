@@ -198,6 +198,25 @@ $(document).ready(function () {
     },
   });
 
+  $(".carousel-reviews").slick({
+    centerPadding: '0px',
+    slidesToShow: 1,
+    dots: false,
+    arrows: true,
+    infinite: false,
+    prevArrow: '<button class="slick-prev"></button>',
+    nextArrow: '<button class="slick-next"></button>',    
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          dots: true,
+          arrows: false
+        }
+      }
+    ]
+  })
+
   $(".carousel-shop").slick({
     centerMode: true,
     centerPadding: '0px',
@@ -224,7 +243,7 @@ $(document).ready(function () {
         }
       }
     ]
-  })
+  });
 
 
 });
