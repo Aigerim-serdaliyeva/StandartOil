@@ -168,7 +168,8 @@ $(document).ready(function () {
 
   $(".carousel-katalog").owlCarousel({
     loop: false,
-    dots: false, nav: true,
+    dots: false, 
+    nav: true,
     smartSpeed: 500,
     margin: 5,
     navText: ['', ''],
@@ -182,13 +183,18 @@ $(document).ready(function () {
   });
 
   $(".carousel-certificates").owlCarousel({
-    loop: true,
+    loop: false,
+    dots: true, 
+    nav: true,
     smartSpeed: 500,
-    margin: 30,
+    margin: 5,
     navText: ['', ''],
     responsive: {
-      0: { items: 1, mouseDrag: false, dots: true, nav: false },
-      480: { items: 2, mouseDrag: true, dots: false, nav: true },
+      0: { items: 1, mouseDrag: false, nav: false },
+      576: { mouseDrag: true, items: 2 },
+      768: { items: 3 },
+      992: { items: 4 },
+      1200: { items: 5 }
     },
   });
 
