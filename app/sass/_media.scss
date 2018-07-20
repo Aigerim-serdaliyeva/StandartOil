@@ -34,9 +34,7 @@
 
   .header {
     padding: 5px 0;
-  }
-
-  
+  }  
 
 	.main-menu {
     display: none;
@@ -66,12 +64,9 @@
 		}
   }    
 
-  .s {
-    
-    &-information {
-      .information {
-        margin-bottom: 20px;
-      }
+  .s-information {
+    .information {
+      margin-bottom: 20px;
     }
   }
 }
@@ -118,27 +113,24 @@
     }      
   }
 
-  .s {
-    &-main {
-      &__title {
-        font-size: 26px;
-      }
+  .s-main {
+    &__title {
+      font-size: 26px;
+    }
 
-      &__img {
-        display: none;
-      }
-    } 
+    &__img {
+      display: none;
+    }
+  } 
 
-    &-us {
+  .s-us {
+    &__img {
+      margin-bottom: 15px;
+      text-align: center;
+    }
 
-      &__img {
-        margin-bottom: 15px;
-        text-align: center;
-      }
-
-      &__text {
-        margin-bottom: 10px;
-      }
+    &__text {
+      margin-bottom: 10px;
     }
   }
 
@@ -219,41 +211,35 @@
     }
   }
 
-  .s {
-
-    &-ka4estva {
-
-      .form {
-        &__block {
-          display: block;
-        }
-      }
-
-      &__img {
-        text-align: center;
+  .s-ka4estva {
+    .form {
+      &__block {
+        display: block;
       }
     }
 
-    &-thanks {
-      padding: 150px 0 50px;
-      
-      &-title {
-        font-size: 30px;
-      }
+    &__img {
+      text-align: center;
+    }
+  }
 
-      &-text {
-        font-size: 16px;
-        margin-bottom: 40px;
-      }
+  .s-thanks {
+    padding: 150px 0 50px;
+    
+    &-title {
+      font-size: 30px;
     }
 
-    &-vybor {
+    &-text {
+      font-size: 16px;
+      margin-bottom: 40px;
+    }
+  }
 
-      &__content {
-
-        .vyibor {
-          position: static;
-        }
+  .s-vybor {
+    &__content {
+      .vyibor {
+        position: static;
       }
     }
   }
