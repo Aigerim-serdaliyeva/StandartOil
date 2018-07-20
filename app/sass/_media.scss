@@ -193,6 +193,14 @@
       }
     }
   }
+  
+  .more-modal {
+    display: block;
+
+    &__title {
+      margin-bottom: 15px;
+    }
+  }
 }
 
 // ≥576px

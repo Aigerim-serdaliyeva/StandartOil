@@ -544,6 +544,16 @@
 
 .more-modal {
   color: #3a3a3a;
+  display: flex;
+  justify-content: space-between;
+
+  &__side {
+    max-width: 370px;
+  }
+
+  &__content {
+    max-width: 780px;
+  }
 
   &__img {
     display: block;
@@ -551,7 +561,7 @@
   }
 
   &__property {
-    font-style: 15px;
+    font-size: 15px;
     font-weight: 500;
     margin-bottom: 10px;
     color: #000;
@@ -570,6 +580,27 @@
     font-size: 16px;
     font-weight: 500;
     color: $accent;
+    margin-bottom: 30px;
+  }
+
+  &__text {
+    margin-bottom: 10px;
+  }
+
+  .table-title {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  table {
+    margin-bottom: 20px;
+    th {
+      text-align: left;
+      font-weight: 500;
+    }
+    td {
+      font-weight: 500;
+    }
   }
 }
 
