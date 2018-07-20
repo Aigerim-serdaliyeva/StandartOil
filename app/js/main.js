@@ -5,7 +5,7 @@ $(document).ready(function () {
   var $html = $("html, body");
   var $header = $(".header");
   var $menu = $(".main-menu");
-  var headerHeight = 99;
+  var headerHeight = 70;
   var $hamburger = $(".hamburger");
 
   // забираем utm из адресной строки и пишем в sessionStorage, чтобы отправить их на сервер при form submit
@@ -22,7 +22,7 @@ $(document).ready(function () {
   new WOW({ mobile: false }).init();
 
   if ($wnd.width() < 992) {
-    headerHeight = 89;
+    headerHeight = 80;
   }
 
   // jquery.maskedinput для ПК и планшет (мобильном не подключаем)
@@ -60,7 +60,7 @@ $(document).ready(function () {
         var section = $(id);
         var sectionTop = section.offset().top;
 
-        if (sectionTop <= scrollPos && (sectionTop + section.height()) >= scrollPos) {
+        if (sectionTop - 2 <= scrollPos && (sectionTop + section.height() + 2) >= scrollPos) {
           link.addClass('active');
         } else {
           link.removeClass('active');
