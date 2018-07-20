@@ -227,6 +227,8 @@
 
     &__content {
       justify-content: flex-start;
+      max-width: 540px;
+      margin: 0 auto 0 0;
     }
   }
 }
