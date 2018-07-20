@@ -127,6 +127,38 @@
       }
     }
   }
+
+  .s-vyibor {
+    &__content {
+      padding: 0 30px;
+    }
+    .vyibor {
+      &__number {
+        display: block;
+      }
+
+      &__text {
+        display: none;
+      }
+
+      &-1 {
+        left: 12%;
+      }
+
+      &-2 {
+        top: 60%;
+        left: 33%;
+      }
+
+      &-3 {
+        top: -3%;
+      }
+
+      &-4 {
+        left: 83%;
+      }
+    }
+  }
 }
 
 // ≥576px
