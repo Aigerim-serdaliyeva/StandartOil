@@ -81,6 +81,10 @@
   .form {
     &--horizontal {
       .form {
+        &__title {
+          text-align: center;
+        }
+        
         &__content {
           flex-direction: column;
           max-width: 500px;
@@ -98,7 +102,7 @@
 
     .input-div, .button {
       width: 100%;
-    }
+    }    
   }
 
   .logo {
