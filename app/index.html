@@ -201,7 +201,7 @@
               Полностью синтетическое масло 
               для бензиновых двигателей</h3>
             <div class="katalog__button">
-              <button class="button button--noback">Подробнее</button>
+              <button class="button button--noback" data-remodal-target="more-modal">Подробнее</button>
               <button class="button button--noback">Заказать</button>
             </div>
           </div>
@@ -214,7 +214,7 @@
               Полусинтетическое масло 
               для бензиновых двигателей</h3>
             <div class="katalog__button">
-              <button class="button button--noback">Подробнее</button>
+              <button class="button button--noback" data-remodal-target="more-modal">Подробнее</button>
               <button class="button button--noback">Заказать</button>
             </div>
           </div>
@@ -226,7 +226,7 @@
             <h3 class="katalog__title">STANDARD OIL® <br>
               Моторное масло</h3>
             <div class="katalog__button">
-              <button class="button button--noback">Подробнее</button>
+              <button class="button button--noback" data-remodal-target="more-modal">Подробнее</button>
               <button class="button button--noback">Заказать</button>
             </div>
           </div>
@@ -238,7 +238,7 @@
             <h3 class="katalog__title">STANDARD OIL® <br>
               Моторное масло</h3>
             <div class="katalog__button">
-              <button class="button button--noback">Подробнее</button>
+              <button class="button button--noback" data-remodal-target="more-modal">Подробнее</button>
               <button class="button button--noback">Заказать</button>
             </div>
           </div>
@@ -265,8 +265,8 @@
         <div class="form form--horizontal">
           <form action="/mail.php" method="post">
             <h4 class="form__title__1">Как отличить оригинальное моторное масло от подделки?</h4>
-            <h4 class="form__title">Мы настоятельно рекомендуем тщательно проверять масло перед тем, как залить его в двигатель. <br>
-                Как это сделать? Оставьте свои данные, и мы отправим Вам инструкцию от ведущих специалистов в этой области.</h4>
+            <p class="text-center">Мы настоятельно рекомендуем тщательно проверять масло перед тем, как залить его в двигатель. <br>
+                Как это сделать? Оставьте свои данные, и мы отправим Вам инструкцию от ведущих специалистов в этой области.</p>
             <div class="form__content">
               <input type="hidden" name="info" value="Как отличить оригинальное моторное масло от подделки?">
 
@@ -537,6 +537,61 @@
       </form>
     </div>
   </div>
+
+  <div class="remodal" data-remodal-id="more-modal" data-remodal-options="hashTracking: true">
+    <button data-remodal-action="close" class="remodal-close"></button>
+
+    <div class="more-modal">
+      <div class="more-modal__side">
+        <img src="./img/product.jpg" alt="" class="more-modal__img">
+        <div class="more-modal__property">Уровень эффективности</div>
+        <div class="more-modal__value">API CJ-4, CI-4+, CF, SM, ACEA E7,E9, Mack EO-O Premium Plus, DDC Power Guard 93K218, CaterpillarECF-3, ECF-2, Cummins 20081, Volvo VDS-4,MB 228.31, MTU тип I и II, MAN 3275, JASO DH-2, Global DHD-1, Renault RLD-3</div>
+        <div class="more-modal__property">Выгоды и преимущества</div>
+        <ul class="more-modal__value">
+          <li>Превышает требования к системе выбросов</li>
+          <li>Увеличенный интервал между заменами масла</li>
+          <li>Улучшает экономию топлива</li>
+          <li>Снижает расход масла и эмиссию</li>
+        </ul>
+      </div>
+
+      <div class="more-modal__content">
+        <h2 class="more-modal__title">STANDARD OIL® <br>
+            Полностью синтетическое масло <br>
+            для дизельных двигателей</h2>
+
+        <div class="more-modal__text">
+            Полностью синтетическое масло для дизельных двигателей STANDARD OIL® является идеальным выбором для двигателей модельного ряда 2007 года, соответствующих нормам API CJ-4 эмиссии выхлопных газов, и более новых двигателей. Оно обеспечивает исключительную смазку для дизельных двигателях в коммерческих, промышленных и личных транспортных средствах. Включая новейшие присадки и синтетические масла, разработанные с использованием новейших технологий, оно превосходит самые высокие требования к современным двигателям. Масло выдерживает тепловую нагрузку, удаляет сажу и кислоты, предотвращая образование отложений, износ и коррозию. Масло не содержит воска и сохраняет вязкость в широком диапазоне температур, обеспечивая холодный запуск и защиту в жаркую погоду. Масло защищает внутренние детали и  обеспечивает максимальную топливную экономичность при увеличении интервалов между заменами.
+        </div>
+
+        <table>
+          
+        </table>
+
+        <div class="form form--horizontal">
+          <div class="form__title">Оставьте заявку на <span class="accent">бесплатный подбор масла</span> для Вашего автомобиля</div>
+          <form action="/mail.php" method="post">
+            <div class="form__content">
+              <input type="hidden" name="info" value="Оставить заявку на Полностью синтетическое масло для дизельных двигателей">
+    
+              <div class="input-div">
+                <input type="text" class="input" name="name" placeholder="Имя">
+              </div>
+    
+              <div class="input-div">
+                <input type="tel" class="input" name="phone" placeholder="Номер телефона *" required>
+                <span class="error-message">Заполните это поле</span>
+              </div>
+    
+              <button class="button ajax-submit" type="submit" id="ostavit_zayavku">Оставить заявку</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+  
 
   <script src="./js/libs.min.js"></script>
   <script src="./js/main.min.js"></script>

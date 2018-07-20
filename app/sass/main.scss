@@ -554,6 +554,35 @@
   }
 }
 
+.more-modal {
+  color: #3a3a3a;
 
+  &__img {
+    display: block;
+    margin: 0 auto 50px;
+  }
+
+  &__property {
+    font-style: 15px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: #000;
+  }
+
+  &__value {
+    margin: 0 0 15px;
+  }
+
+  ul {
+    list-style-position: inside;
+    padding: 0;
+  }
+
+  &__title {
+    font-size: 16px;
+    font-weight: 500;
+    color: $accent;
+  }
+}
 
 @import './_media';
